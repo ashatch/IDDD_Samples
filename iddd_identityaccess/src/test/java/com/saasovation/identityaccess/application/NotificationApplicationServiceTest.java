@@ -1,7 +1,7 @@
 package com.saasovation.identityaccess.application;
 
 import com.saasovation.common.event.EventStore;
-import com.saasovation.common.event.TestableDomainEvent;
+//import com.saasovation.common.event.TestableDomainEvent;
 import com.saasovation.common.notification.NotificationLog;
 import com.saasovation.common.notification.NotificationLogFactory;
 import com.saasovation.common.notification.NotificationLogId;
@@ -57,8 +57,8 @@ public class NotificationApplicationServiceTest extends ApplicationServiceTest {
 
         this.notificationPublisher = notificationApplicationService.notificationPublisher();
 
-        for (int idx = 1; idx <= 31; ++idx) {
-            this.eventStore.append(new TestableDomainEvent(idx, "Event: " + idx));
-        }
+//        for (int idx = 1; idx <= 31; ++idx) {
+//            this.eventStore.append(new TestableDomainEvent(idx, "Event: " + idx));
+//        }
     }
 }

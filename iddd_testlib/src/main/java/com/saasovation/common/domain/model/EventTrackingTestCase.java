@@ -199,21 +199,21 @@ public abstract class EventTrackingTestCase extends TestCase {
     protected class TestAgilePMRabbitMQExchangeListener extends TestExchangeListener {
         @Override
         protected String exchangeName() {
-            return AGILEPM_EXCHANGE_NAME;
+            return Exchanges.AGILEPM_EXCHANGE_NAME;
         }
     }
 
     protected class TestCollaborationRabbitMQExchangeListener extends TestExchangeListener {
         @Override
         protected String exchangeName() {
-            return COLLABORATION_EXCHANGE_NAME;
+            return Exchanges.COLLABORATION_EXCHANGE_NAME;
         }
     }
 
     protected class TestIdentityAccessRabbitMQExchangeListener extends TestExchangeListener {
         @Override
         protected String exchangeName() {
-            return IDENTITY_ACCESS_EXCHANGE_NAME;
+            return Exchanges.IDENTITY_ACCESS_EXCHANGE_NAME;
         }
     }
 
